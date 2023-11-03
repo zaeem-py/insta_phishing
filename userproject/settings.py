@@ -1,4 +1,3 @@
-
 """
 Django settings for userproject project.
 
@@ -27,7 +26,6 @@ SECRET_KEY = 'django-insecure-11!n59lrbqo3+)wm9ceq@fm=st=us82$dt-9lo74g9bn*fww!i
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 
 # Application definition
@@ -77,11 +75,13 @@ WSGI_APPLICATION = 'userproject.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-        'default': {
+    'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -116,13 +116,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     "/var/www/static/",
 ]
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
